@@ -58,6 +58,9 @@
     <Compile Include="Assets\Scripts\NavMeshController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Character_Witch_Dragon\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
