@@ -8,6 +8,7 @@ public class NavMeshController : MonoBehaviour
     public bool caminar=false;
     private NavMeshAgent agente;
     public Ruleta Mov;
+    public SceneChanger escena;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,11 +53,17 @@ public class NavMeshController : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Fichas")
+        if (other.tag == "Fichas" || other.tag == "FichaPuerta" || other.tag == "FichaCiudad"
+            || other.tag == "FichaCofrePlateado" || other.tag == "FichaAlas" || other.tag == "FichaCofreEquipo")
         {
             if (Mov.number > 0) //si los movimientos restantes son mayores a 0, entonces que le reste 1.
             {
                 Mov.number -= 1; 
+            }
+
+            if(Mov.number == 0 && other.tag == "Fichas")
+            {
+                escena.ChangeScene("BattleScene");
             }
         }
         print("Mov al caminar: " + Mov.number);

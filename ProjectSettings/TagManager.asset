@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Wall
   - Fichas
+  - FichaPuerta
+  - FichaCofreEquipo
+  - FichaCofrePlateado
+  - FichaCiudad
+  - FichaAlas
   layers:
   - Default
   - TransparentFX
