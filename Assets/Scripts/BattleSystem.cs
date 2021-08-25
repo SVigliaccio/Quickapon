@@ -17,20 +17,20 @@ public class BattleSystem : MonoBehaviour
 	Unit playerUnit;
 	Unit enemyUnit;
 
-	//public Text dialogueText;
+	public Text dialogueText;
 
 	public BattleHUD playerHUD;
 	public BattleHUD enemyHUD;
 
 	public BattleState state;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+	// Start is called before the first frame update
+	void Start()
+	{
 		SceneChanger Cambio = Instantiate(Manager);
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
-    }
+	}
 
 	IEnumerator SetupBattle()
 	{
@@ -40,12 +40,12 @@ public class BattleSystem : MonoBehaviour
 		GameObject enemyGO = Instantiate(enemyPrefab/*, enemyBattleStation*/);
 		enemyUnit = enemyGO.GetComponent<Unit>();
 
-		//dialogueText.text = "A wild " + enemyUnit.unitName + " approaches...";
+		dialogueText.text = "Un " + enemyUnit.unitName + " salvaje aparece...";
 
 		playerHUD.SetHUD(playerUnit);
 		enemyHUD.SetHUD(enemyUnit);
 
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1.5f);
 
 		state = BattleState.PLAYERTURN;
 		PlayerTurn();
@@ -56,9 +56,9 @@ public class BattleSystem : MonoBehaviour
 		bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
 		enemyHUD.SetHP(enemyUnit.currentHP);
-		//dialogueText.text = "The attack is successful!";
+		dialogueText.text = "Atacas a "+ enemyUnit.unitName+" causando "+playerUnit.damage+" puntos de daño!";
 
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1.5f);
 
 		if(isDead)
 		{
@@ -73,7 +73,7 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator EnemyTurn()
 	{
-		//dialogueText.text = enemyUnit.unitName + " attacks!";
+		dialogueText.text = enemyUnit.unitName + " ataca a " + playerUnit.unitName + " causando " + enemyUnit.damage+" puntos de daño!";
 
 		yield return new WaitForSeconds(1f);
 
@@ -99,27 +99,27 @@ public class BattleSystem : MonoBehaviour
 	{
 		if(state == BattleState.WON)
 		{
+			dialogueText.text = "Derrotaste a "+ enemyUnit.unitName+ "!";
 			Manager.ChangeScene("Level2");
-			//dialogueText.text = "You won the battle!";
 		} else if (state == BattleState.LOST)
 		{
-			//dialogueText.text = "You were defeated.";
+			dialogueText.text = "Fuiste vencido por"+ enemyUnit.unitName + "!";
 		}
 	}
 
 	void PlayerTurn()
 	{
-		//dialogueText.text = "Choose an action:";
+		dialogueText.text = "Elige tu proxima accion!";
 	}
 
 	IEnumerator PlayerHeal()
 	{
-		playerUnit.Heal(5);
+		playerUnit.Heal(10);
 
 		playerHUD.SetHP(playerUnit.currentHP);
-		//dialogueText.text = "You feel renewed strength!";
+		dialogueText.text = "Te sientes revitalizado ! (+10HP)" ;
 
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1.5f);
 
 		state = BattleState.ENEMYTURN;
 		StartCoroutine(EnemyTurn());
