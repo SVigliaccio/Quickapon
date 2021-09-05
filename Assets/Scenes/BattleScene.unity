@@ -661,7 +661,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 350267262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ace5d3b76e8bbd94d8faa070310b062d, type: 3}
+  m_Script: {fileID: 11500000, guid: 775ff30f6950d1643a8d7e20c43c58a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 5674484368629161613, guid: 10021f1ffb851ee42a2f9e2ce33428b7, type: 3}
@@ -670,6 +670,7 @@ MonoBehaviour:
   att: {fileID: 831198376}
   heal: {fileID: 1910209969}
   dialogueText: {fileID: 867240670}
+  Final: {fileID: 2349956178305090996, guid: b68affbbb24ba554793b3962c9fb2399, type: 3}
   playerHUD: {fileID: 1516718689}
   enemyHUD: {fileID: 1026566822}
   state: 0

@@ -92,15 +92,15 @@ public class BattleSystem : MonoBehaviour
 			state = BattleState.ENEMYTURN;
 			StartCoroutine(EnemyTurn());
 		}
-	}
+	}	
 
 	IEnumerator EnemyTurn()
 	{
-		dialogueText.text = enemyUnit.unitName + " ataca a " + playerUnit.unitName + " causando " + enemyUnit.enemyDamage+" puntos de daño!";
+		dialogueText.text = enemyUnit.unitName + " ataca a " + playerUnit.unitName + " causando " + (enemyUnit.enemyDamage - Unit.defence)+" puntos de daño!";
 
 		yield return new WaitForSeconds(1f);
 
-		bool isDead = playerUnit.TakeDamage(enemyUnit.enemyDamage);
+		bool isDead = playerUnit.TakeDamage(enemyUnit.enemyDamage-Unit.defence);
 
 		playerHUD.SetHP(playerUnit.currentHP);
 

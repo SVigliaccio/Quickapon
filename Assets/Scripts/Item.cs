@@ -19,7 +19,8 @@ public class Item : MonoBehaviour
     public GameObject weaponManager;
 
     [HideInInspector]
-    public GameObject weapon;
+    public GameObject equipment;
+
 
     public bool playersWeapon;
 
@@ -36,7 +37,7 @@ public class Item : MonoBehaviour
                 if (weaponManager.transform.GetChild(i).gameObject.GetComponent<Item>().ID == ID)
                 {
                     value = weaponManager.transform.GetChild(i).gameObject.GetComponent<Item>().value;
-                    weapon = weaponManager.transform.GetChild(i).gameObject;
+                    equipment = weaponManager.transform.GetChild(i).gameObject;
                 }
             }
         }
@@ -52,7 +53,9 @@ public class Item : MonoBehaviour
             if (equipped == false)
             {
                 gameObject.SetActive(false);
-                Unit.damage -= value;
+                
+                if(type == "Weapon")Unit.damage -= value;
+                if (type == "Shield") Unit.defence -= value;
             }
         }
     }
@@ -60,21 +63,38 @@ public class Item : MonoBehaviour
     {
         if (type == "Weapon")
         {
-            weapon.SetActive(true);
+            equipment.SetActive(true);
 
-            weapon.GetComponent<Item>().equipped = true;
-            Unit.damage += value;
+            equipment.GetComponent<Item>().equipped = true;
+            if (type == "Weapon") Unit.damage += value;
+            if (type == "Shield") Unit.defence += value;
         }
+        if (type == "Shield")
+        {
+            equipment.SetActive(true);
+
+            equipment.GetComponent<Item>().equipped = true;
+            Unit.defence += value;
+        }
+
     }
 
     public void DeleteItem()
     {
         if (type == "Weapon")
         {
-            weapon.SetActive(false);
+            equipment.SetActive(false);
 
-            weapon.GetComponent<Item>().equipped = false;
-            weapon.GetComponent<Item>().icon = null;
+            equipment.GetComponent<Item>().equipped = false;
+            equipment.GetComponent<Item>().icon = null;
         }
+        if (type == "Shield")
+        {
+            equipment.SetActive(false);
+
+            equipment.GetComponent<Item>().equipped = false;
+            equipment.GetComponent<Item>().icon = null;
+        }
+
     }
 }

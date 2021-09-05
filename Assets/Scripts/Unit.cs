@@ -9,6 +9,7 @@ public class Unit : MonoBehaviour
 	public int unitLevel;
 
 	public static int damage = 15;
+	public static int defence = 0;
 	public int enemyDamage;
 
 	public int maxHP;
