@@ -11,6 +11,7 @@ TagManager:
   - FichaCofrePlateado
   - FichaCiudad
   - FichaAlas
+  - Item
   layers:
   - Default
   - TransparentFX
