@@ -32,7 +32,7 @@ public class BattleSystem : MonoBehaviour
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
 		att.interactable = false;
-			heal.interactable = false;
+		heal.interactable = false;
 	}
     private void Update()
     {
@@ -68,10 +68,10 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator PlayerAttack()
 	{
-		bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
+		bool isDead = enemyUnit.TakeDamage(Unit.damage);
 
 		enemyHUD.SetHP(enemyUnit.currentHP);
-		dialogueText.text = "Atacas a "+ enemyUnit.unitName+" causando "+playerUnit.damage+" puntos de daño!";
+		dialogueText.text = "Atacas a "+ enemyUnit.unitName+" causando "+ Unit.damage + " puntos de daño!";
 
 		yield return new WaitForSeconds(0.1f);
 
@@ -88,11 +88,11 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator EnemyTurn()
 	{
-		dialogueText.text = enemyUnit.unitName + " ataca a " + playerUnit.unitName + " causando " + enemyUnit.damage+" puntos de daño!";
+		dialogueText.text = enemyUnit.unitName + " ataca a " + playerUnit.unitName + " causando " + enemyUnit.enemyDamage+" puntos de daño!";
 
 		yield return new WaitForSeconds(1f);
 
-		bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
+		bool isDead = playerUnit.TakeDamage(enemyUnit.enemyDamage);
 
 		playerHUD.SetHP(playerUnit.currentHP);
 
@@ -130,10 +130,10 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator PlayerHeal()
 	{
-		playerUnit.Heal(10);
+		playerUnit.Heal(20);
 
 		playerHUD.SetHP(playerUnit.currentHP);
-		dialogueText.text = "Te sientes revitalizado ! (+10HP)" ;
+		dialogueText.text = "Te sientes revitalizado ! (+20HP)" ;
 
 		yield return new WaitForSeconds(1.5f);
 

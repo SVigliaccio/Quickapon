@@ -11,7 +11,8 @@ public class NavMeshController : MonoBehaviour
     private NavMeshAgent agente;
     public Ruleta Mov;
     public SceneChanger escena;
-    
+    public GameObject Panel;
+    public Button boton;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,7 +77,16 @@ public class NavMeshController : MonoBehaviour
                 escena.ChangeScene("FinalBattle");
 
             }
+            if (Mov.number == 0 && (other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo"))
+            {
+                Panel.SetActive(true);
+                Mov.number = 2;
+                boton.interactable = true;
+            }
         }
         print("Mov al caminar: " + Mov.number);
     }
 }
+
+
+

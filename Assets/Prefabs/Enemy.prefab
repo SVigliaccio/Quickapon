@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Dragon
   unitLevel: 7
-  damage: 15
-  maxHP: 70
-  currentHP: 70
+  enemyDamage: 15
+  maxHP: 100
+  currentHP: 100
 --- !u!1001 &6778534916713276929
 PrefabInstance:
   m_ObjectHideFlags: 0

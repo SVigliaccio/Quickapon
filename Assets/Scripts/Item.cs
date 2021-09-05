@@ -8,7 +8,8 @@ public class Item : MonoBehaviour
     public string type;
     public string descripcion;
     public Sprite icon;
-
+    public int value;
+    public Unit Player;
     [HideInInspector] //Para que una variable publica no se visualice en unity
     public bool picketUp;
     [HideInInspector]
@@ -24,6 +25,7 @@ public class Item : MonoBehaviour
 
     private void Start()
     {
+        Player = GetComponentInParent<Unit>();
         weaponManager = GameObject.FindWithTag("WeaponManager");
 
         if (!playersWeapon)
@@ -33,6 +35,7 @@ public class Item : MonoBehaviour
             {
                 if (weaponManager.transform.GetChild(i).gameObject.GetComponent<Item>().ID == ID)
                 {
+                    value = weaponManager.transform.GetChild(i).gameObject.GetComponent<Item>().value;
                     weapon = weaponManager.transform.GetChild(i).gameObject;
                 }
             }
@@ -49,6 +52,7 @@ public class Item : MonoBehaviour
             if (equipped == false)
             {
                 gameObject.SetActive(false);
+                Unit.damage -= value;
             }
         }
     }
@@ -59,6 +63,7 @@ public class Item : MonoBehaviour
             weapon.SetActive(true);
 
             weapon.GetComponent<Item>().equipped = true;
+            Unit.damage += value;
         }
     }
 }

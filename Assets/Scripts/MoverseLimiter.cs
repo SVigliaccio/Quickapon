@@ -29,5 +29,6 @@ public class MoverseLimiter : MonoBehaviour
         {
             boton.interactable = true;
         }
+
     }
 }

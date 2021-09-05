@@ -8,12 +8,14 @@ public class Unit : MonoBehaviour
 	public string unitName;
 	public int unitLevel;
 
-	public int damage;
+	public static int damage = 15;
+	public int enemyDamage;
 
 	public int maxHP;
 	public int currentHP;
 
-	public bool TakeDamage(int dmg)
+
+    public bool TakeDamage(int dmg)
 	{
 		currentHP -= dmg;
 
