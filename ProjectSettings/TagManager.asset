@@ -12,6 +12,7 @@ TagManager:
   - FichaCiudad
   - FichaAlas
   - Item
+  - WeaponManager
   layers:
   - Default
   - TransparentFX

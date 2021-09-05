@@ -54,7 +54,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\MoverseLimiter.cs" />
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
+    <Compile Include="Assets\Scripts\HideUIonBattle.cs" />
     <Compile Include="Assets\Scripts\Unit.cs" />
     <Compile Include="Assets\Scripts\Ruleta.cs" />
     <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
@@ -63,10 +65,13 @@
     <Compile Include="Assets\Scripts\BattleHUD.cs" />
     <Compile Include="Assets\Scripts\Inventario.cs" />
     <Compile Include="Assets\Scripts\NavMeshController.cs" />
-    <Compile Include="Assets\Scripts\HideUIonBattle.cs" />
-    <Compile Include="Assets\Scripts\MoverseLimiter.cs" />
+    <Compile Include="Assets\Scripts\Slot.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Cainos\Pixel Art Icon Pack - RPG\Shader\SH UI Icon Outline Color.shader" />
+    <None Include="Assets\Cainos\Pixel Art Icon Pack - RPG\Shader\SH Sprite Icon Outline Color.shader" />
     <None Include="Assets\Character_Witch_Dragon\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -640,48 +645,38 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.16f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{3E9CD664-11D6-A3EC-EA96-BEDEF1061D21}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{12C2A1FC-7545-1941-76C4-D7D21ACD7183}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{D2E0F371-2514-678E-2022-93CC50D12725}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{976E5D5A-50AD-E383-D140-3B7BED942DBE}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{FD41DB68-C552-A020-0E87-5ED63EF083F3}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{A0C72050-CC11-92DB-A43D-84723FBB62B2}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{DDCD94D2-2117-5C29-C543-36AD9B44FF0C}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{1EF2F052-96DB-BD52-F9CC-37FB5AA73F09}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{E20845F9-2AB3-BFBC-778E-D53DC419766A}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{8FB43E01-5476-2782-87F5-A3A230F1061F}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
