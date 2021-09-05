@@ -16,7 +16,8 @@ public class BattleSystem : MonoBehaviour
 
 	Unit playerUnit;
 	Unit enemyUnit;
-
+	public Button att;
+	public Button heal;
 	public Text dialogueText;
 
 	public BattleHUD playerHUD;
@@ -30,9 +31,23 @@ public class BattleSystem : MonoBehaviour
 		SceneChanger Cambio = Instantiate(Manager);
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
+		att.interactable = false;
+			heal.interactable = false;
 	}
-
-	IEnumerator SetupBattle()
+    private void Update()
+    {
+        if(state != BattleState.PLAYERTURN)
+        {
+			att.interactable = false;
+			heal.interactable = false;
+        }
+        else
+        {
+			att.interactable = true;
+			heal.interactable = true;
+		}
+    }
+    IEnumerator SetupBattle()
 	{
 		GameObject playerGO = Instantiate(playerPrefab/*, playerBattleStation*/);
 		playerUnit = playerGO.GetComponent<Unit>();
@@ -58,7 +73,7 @@ public class BattleSystem : MonoBehaviour
 		enemyHUD.SetHP(enemyUnit.currentHP);
 		dialogueText.text = "Atacas a "+ enemyUnit.unitName+" causando "+playerUnit.damage+" puntos de daño!";
 
-		yield return new WaitForSeconds(1.5f);
+		yield return new WaitForSeconds(0.1f);
 
 		if(isDead)
 		{
@@ -101,6 +116,7 @@ public class BattleSystem : MonoBehaviour
 		{
 			dialogueText.text = "Derrotaste a "+ enemyUnit.unitName+ "!";
 			Manager.ChangeScene("Level2");
+			
 		} else if (state == BattleState.LOST)
 		{
 			dialogueText.text = "Fuiste vencido por"+ enemyUnit.unitName + "!";

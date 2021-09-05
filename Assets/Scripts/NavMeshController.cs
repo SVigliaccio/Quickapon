@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
+
 
 public class NavMeshController : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class NavMeshController : MonoBehaviour
     private NavMeshAgent agente;
     public Ruleta Mov;
     public SceneChanger escena;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,13 +22,13 @@ public class NavMeshController : MonoBehaviour
          */
         //Queremos acceder al componente NavMeshAgent que añadimos con antelacion a nuestro jugador.
         agente = GetComponent<NavMeshAgent>();
-
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Mov.number > 0) { caminar = true; } else { caminar = false; agente.destination = gameObject.transform.position; }
+        if(Mov.number > 0 && FindObjectOfType<MoverseLimiter>().boton.interactable == false) { caminar = true;  } else { caminar = false; agente.destination = gameObject.transform.position; }
 
         if (caminar)
         {
@@ -63,7 +66,15 @@ public class NavMeshController : MonoBehaviour
 
             if(Mov.number == 0 && other.tag == "Fichas")
             {
+                Mov.number = 2;
                 escena.ChangeScene("BattleScene");
+                
+            }
+            if (Mov.number == 0 && other.tag == "FichaCiudad")
+            {
+                Mov.number = 2;
+                escena.ChangeScene("FinalBattle");
+
             }
         }
         print("Mov al caminar: " + Mov.number);
