@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private bool inventoryEnabled;
+    public static bool inventoryEnabled;
     public GameObject inventory;
     private int allSlots;
     private int enabledSlots;
@@ -79,5 +79,12 @@ public class Inventory : MonoBehaviour
             }
             
         }
+    }
+    public static void DelItem(GameObject slot) //Delete Item, limpiar el slot. Es llamado desde Slot.cs cuando se selecciona el boton eliminar sobre un item.
+    {
+        slot.GetComponent<Slot>().item = null;
+        slot.GetComponent<Slot>().icon = null;
+        slot.GetComponent<Slot>().empty = true;
+
     }
 }

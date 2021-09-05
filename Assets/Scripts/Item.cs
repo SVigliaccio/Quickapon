@@ -66,4 +66,15 @@ public class Item : MonoBehaviour
             Unit.damage += value;
         }
     }
+
+    public void DeleteItem()
+    {
+        if (type == "Weapon")
+        {
+            weapon.SetActive(false);
+
+            weapon.GetComponent<Item>().equipped = false;
+            weapon.GetComponent<Item>().icon = null;
+        }
+    }
 }

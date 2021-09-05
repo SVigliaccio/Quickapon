@@ -31,7 +31,7 @@ public class NavMeshController : MonoBehaviour
     {
         if(Mov.number > 0 && FindObjectOfType<MoverseLimiter>().boton.interactable == false) { caminar = true;  } else { caminar = false; agente.destination = gameObject.transform.position; }
 
-        if (caminar)
+        if (caminar && !Inventory.inventoryEnabled)//si caminar está habilitado y el inventario está cerrado, entra y toma el input del mouse, sino no, pa que no se mueva usando el inventario.
         {
             //Si hacemos click con el boton 0 del mouse(que es el que corresponde con el boton izquierdo)
             if (Input.GetMouseButtonDown(0))
