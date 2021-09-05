@@ -82,6 +82,7 @@ public class NavMeshController : MonoBehaviour
                 Panel.SetActive(true);
                 Mov.number = 2;
                 boton.interactable = true;
+                //LLamar metodo random
             }
         }
         print("Mov al caminar: " + Mov.number);
