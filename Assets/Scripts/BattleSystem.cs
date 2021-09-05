@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
@@ -19,7 +20,7 @@ public class BattleSystem : MonoBehaviour
 	public Button att;
 	public Button heal;
 	public Text dialogueText;
-
+	public GameObject Final;
 	public BattleHUD playerHUD;
 	public BattleHUD enemyHUD;
 
@@ -28,6 +29,7 @@ public class BattleSystem : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		
 		SceneChanger Cambio = Instantiate(Manager);
 		state = BattleState.START;
 		StartCoroutine(SetupBattle());
@@ -36,6 +38,7 @@ public class BattleSystem : MonoBehaviour
 	}
     private void Update()
     {
+		
         if(state != BattleState.PLAYERTURN)
         {
 			att.interactable = false;
@@ -73,12 +76,17 @@ public class BattleSystem : MonoBehaviour
 		enemyHUD.SetHP(enemyUnit.currentHP);
 		dialogueText.text = "Atacas a "+ enemyUnit.unitName+" causando "+ Unit.damage + " puntos de daño!";
 
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.5f);
 
 		if(isDead)
 		{
 			state = BattleState.WON;
-			EndBattle();
+			StartCoroutine(EndBattle());
+			if (SceneManager.GetActiveScene().name == "FinalBattle")
+			{
+				Final.SetActive(true);
+				yield return new WaitForSeconds(120f);
+			}
 		} else
 		{
 			state = BattleState.ENEMYTURN;
@@ -97,11 +105,13 @@ public class BattleSystem : MonoBehaviour
 		playerHUD.SetHP(playerUnit.currentHP);
 
 		yield return new WaitForSeconds(1f);
-
+		print("dragon ded" + isDead);
 		if(isDead)
 		{
 			state = BattleState.LOST;
 			EndBattle();
+
+			
 		} else
 		{
 			state = BattleState.PLAYERTURN;
@@ -110,16 +120,22 @@ public class BattleSystem : MonoBehaviour
 
 	}
 
-	void EndBattle()
+	IEnumerator EndBattle()
 	{
 		if(state == BattleState.WON)
 		{
 			dialogueText.text = "Derrotaste a "+ enemyUnit.unitName+ "!";
-			Manager.ChangeScene("Level2");
-			
+			yield return new WaitForSeconds(1f);
+			if (SceneManager.GetActiveScene().name == "FinalBattle") Final.SetActive(true);
+            else	{ 
+						Manager.ChangeScene("Level2");
+					}
+
 		} else if (state == BattleState.LOST)
 		{
 			dialogueText.text = "Fuiste vencido por"+ enemyUnit.unitName + "!";
+			yield return new WaitForSeconds(1f);
+			Manager.ChangeScene("Level2");
 		}
 	}
 
@@ -130,10 +146,10 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator PlayerHeal()
 	{
-		playerUnit.Heal(20);
+		playerUnit.Heal(25);
 
 		playerHUD.SetHP(playerUnit.currentHP);
-		dialogueText.text = "Te sientes revitalizado ! (+20HP)" ;
+		dialogueText.text = "Te sientes revitalizado ! (+25HP)" ;
 
 		yield return new WaitForSeconds(1.5f);
 
