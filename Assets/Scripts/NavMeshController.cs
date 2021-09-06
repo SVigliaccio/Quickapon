@@ -9,10 +9,11 @@ public class NavMeshController : MonoBehaviour
 {
     public bool caminar=false;
     private NavMeshAgent agente;
-    public Ruleta Mov;
+    //public Ruleta Mov;
     public SceneChanger escena;
     public GameObject Panel;
     public Button boton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,7 @@ public class NavMeshController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Mov.number > 0 && FindObjectOfType<MoverseLimiter>().boton.interactable == false) { caminar = true;  } else { caminar = false; agente.destination = gameObject.transform.position; }
+        if(Ruleta.number > 0 && FindObjectOfType<MoverseLimiter>().boton.interactable == false) { caminar = true;  } else { caminar = false; agente.destination = gameObject.transform.position; }
 
         if (caminar && !Inventory.inventoryEnabled)//si caminar está habilitado y el inventario está cerrado, entra y toma el input del mouse, sino no, pa que no se mueva usando el inventario.
         {
@@ -57,35 +58,44 @@ public class NavMeshController : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Fichas" || other.tag == "FichaPuerta" || other.tag == "FichaCiudad"
-            || other.tag == "FichaCofrePlateado" || other.tag == "FichaAlas" || other.tag == "FichaCofreEquipo")
+        
+
+        if (other.tag == "Fichas"  || other.tag == "FichaCiudad"
+            || other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo")
         {
-            if (Mov.number > 0) //si los movimientos restantes son mayores a 0, entonces que le reste 1.
+            Transform item = other.gameObject.transform.GetChild(0);
+            if (Ruleta.number > 0 && caminar) //si los movimientos restantes son mayores a 0, entonces que le reste 1.
             {
-                Mov.number -= 1; 
+                Ruleta.number -= 1; 
             }
 
-            if(Mov.number == 0 && other.tag == "Fichas")
+            if(Ruleta.number == 0 && other.tag == "Fichas")
             {
-                Mov.number = 2;
+                Ruleta.number = 2;
                 escena.ChangeScene("BattleScene");
                 
             }
-            if (Mov.number == 0 && other.tag == "FichaCiudad")
+            if (Ruleta.number == 0 && other.tag == "FichaCiudad")
             {
-                Mov.number = 2;
+                Ruleta.number = 2;
                 escena.ChangeScene("FinalBattle");
 
             }
-            if (Mov.number == 0 && (other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo"))
+            if (Ruleta.number == 0 && (other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo"))
             {
                 Panel.SetActive(true);
-                Mov.number = 2;
+                Ruleta.number = 2;
                 boton.interactable = true;
+                
+                item.gameObject.GetComponent<BoxCollider>().enabled = true;
                 //LLamar metodo random
             }
+            if (BattleSystem.ganado == true)
+            {
+                item.gameObject.GetComponent<BoxCollider>().enabled = true;
+            }
         }
-        print("Mov al caminar: " + Mov.number);
+        print("Mov al caminar: " + Ruleta.number);
     }
 }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -566,7 +566,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   caminar: 0
-  Mov: {fileID: 51162601}
   escena: {fileID: 1291401116}
   Panel: {fileID: 1046102289}
   boton: {fileID: 250950069}
@@ -1313,6 +1312,7 @@ GameObject:
   - component: {fileID: 107681738}
   - component: {fileID: 107681739}
   - component: {fileID: 107681740}
+  - component: {fileID: 107681741}
   m_Layer: 0
   m_Name: FichaCampo (8)
   m_TagString: Fichas
@@ -1414,6 +1414,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &107681741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107681736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 107681737}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &110361676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,6 +1444,7 @@ GameObject:
   - component: {fileID: 110361678}
   - component: {fileID: 110361679}
   - component: {fileID: 110361680}
+  - component: {fileID: 110361681}
   m_Layer: 0
   m_Name: FichaCampo (16)
   m_TagString: Fichas
@@ -1527,6 +1546,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &110361681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110361676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 110361677}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &114941074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,9 +1869,10 @@ GameObject:
   - component: {fileID: 134299152}
   - component: {fileID: 134299153}
   - component: {fileID: 134299154}
+  - component: {fileID: 134299155}
   m_Layer: 0
   m_Name: FichaAlas (1)
-  m_TagString: FichaAlas
+  m_TagString: FichaCofrePlateado
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1933,6 +1971,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &134299155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134299150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 134299151}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 675849439}
+  - {fileID: 567093969}
+  - {fileID: 728636945}
+  - {fileID: 670366310}
 --- !u!1 &134923420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,6 +2002,7 @@ GameObject:
   - component: {fileID: 134923422}
   - component: {fileID: 134923423}
   - component: {fileID: 134923424}
+  - component: {fileID: 134923425}
   m_Layer: 0
   m_Name: FichaCampo (1)
   m_TagString: Fichas
@@ -2046,6 +2104,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &134923425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134923420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 134923421}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &137208900
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,6 +2311,7 @@ GameObject:
   - component: {fileID: 166942021}
   - component: {fileID: 166942022}
   - component: {fileID: 166942023}
+  - component: {fileID: 166942024}
   m_Layer: 0
   m_Name: FichaCampo (42)
   m_TagString: Fichas
@@ -2336,6 +2413,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &166942024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166942019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 166942020}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &168876838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,6 +2535,7 @@ GameObject:
   - component: {fileID: 200439100}
   - component: {fileID: 200439101}
   - component: {fileID: 200439102}
+  - component: {fileID: 200439103}
   m_Layer: 0
   m_Name: FichaCampo (25)
   m_TagString: Fichas
@@ -2541,6 +2637,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &200439103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200439098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 200439099}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &204573729
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,6 +3114,7 @@ GameObject:
   - component: {fileID: 230200720}
   - component: {fileID: 230200721}
   - component: {fileID: 230200722}
+  - component: {fileID: 230200723}
   m_Layer: 0
   m_Name: FichaCampo (19)
   m_TagString: Fichas
@@ -3101,6 +3216,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &230200723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230200718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 230200719}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &230617310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,6 +3246,7 @@ GameObject:
   - component: {fileID: 230617312}
   - component: {fileID: 230617313}
   - component: {fileID: 230617314}
+  - component: {fileID: 230617315}
   m_Layer: 0
   m_Name: FichaCofreEquipo (3)
   m_TagString: FichaCofreEquipo
@@ -3214,6 +3348,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &230617315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230617310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 230617311}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 728636945}
 --- !u!1 &231480182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +3670,7 @@ GameObject:
   - component: {fileID: 272326850}
   - component: {fileID: 272326851}
   - component: {fileID: 272326852}
+  - component: {fileID: 272326853}
   m_Layer: 0
   m_Name: FichaCofreEquipo (1)
   m_TagString: FichaCofreEquipo
@@ -3620,6 +3772,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &272326853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272326848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 272326849}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 728636945}
 --- !u!1 &296650991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3904,6 +4073,7 @@ GameObject:
   - component: {fileID: 304039676}
   - component: {fileID: 304039677}
   - component: {fileID: 304039678}
+  - component: {fileID: 304039679}
   m_Layer: 0
   m_Name: FichaCampo (12)
   m_TagString: Fichas
@@ -4005,6 +4175,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &304039679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304039674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 304039675}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &306313708
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,6 +4369,7 @@ GameObject:
   - component: {fileID: 311135612}
   - component: {fileID: 311135613}
   - component: {fileID: 311135614}
+  - component: {fileID: 311135615}
   m_Layer: 0
   m_Name: FichaCampo (22)
   m_TagString: Fichas
@@ -4282,6 +4471,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &311135615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311135610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 311135611}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &318671221
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,6 +4501,7 @@ GameObject:
   - component: {fileID: 318671223}
   - component: {fileID: 318671224}
   - component: {fileID: 318671225}
+  - component: {fileID: 318671226}
   m_Layer: 0
   m_Name: FichaCampo (17)
   m_TagString: Fichas
@@ -4395,6 +4603,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &318671226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318671221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 318671222}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &327759928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4407,6 +4633,7 @@ GameObject:
   - component: {fileID: 327759930}
   - component: {fileID: 327759931}
   - component: {fileID: 327759932}
+  - component: {fileID: 327759933}
   m_Layer: 0
   m_Name: FichaCampo (9)
   m_TagString: Fichas
@@ -4508,6 +4735,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &327759933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327759928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 327759929}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &337795673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4520,6 +4765,7 @@ GameObject:
   - component: {fileID: 337795675}
   - component: {fileID: 337795676}
   - component: {fileID: 337795677}
+  - component: {fileID: 337795678}
   m_Layer: 0
   m_Name: FichaCampo (2)
   m_TagString: Fichas
@@ -4621,6 +4867,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &337795678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337795673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 337795674}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!224 &342105942 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3888203798238474283, guid: 585eab96b8da3d44fb6e864fdb59b224, type: 3}
@@ -4802,6 +5066,7 @@ GameObject:
   - component: {fileID: 366544181}
   - component: {fileID: 366544182}
   - component: {fileID: 366544183}
+  - component: {fileID: 366544184}
   m_Layer: 0
   m_Name: FichaCampo (32)
   m_TagString: Fichas
@@ -4903,6 +5168,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &366544184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366544179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 366544180}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &373296569
 GameObject:
   m_ObjectHideFlags: 0
@@ -4997,6 +5280,7 @@ GameObject:
   - component: {fileID: 378538609}
   - component: {fileID: 378538610}
   - component: {fileID: 378538611}
+  - component: {fileID: 378538612}
   m_Layer: 0
   m_Name: FichaCampo (36)
   m_TagString: Fichas
@@ -5098,6 +5382,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &378538612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378538607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 378538608}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &416888572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5399,143 +5701,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &428397565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 428397570}
-  - component: {fileID: 428397569}
-  - component: {fileID: 428397568}
-  - component: {fileID: 428397567}
-  - component: {fileID: 428397566}
-  m_Layer: 0
-  m_Name: Iron Shield (1)
-  m_TagString: Item
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &428397566
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428397565}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &428397567
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428397565}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &428397568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428397565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db8189b02deed541852bf696d8e82d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 5
-  type: Shield
-  descripcion: Escudo hecho de escamas de dragon [+10 DEF]
-  icon: {fileID: 21300000, guid: 256205b9c6ca12c45ab7762da8a65631, type: 3}
-  value: 10
-  Player: {fileID: 0}
-  picketUp: 0
-  equipped: 0
-  weaponManager: {fileID: 0}
-  equipment: {fileID: 0}
-  playersWeapon: 0
---- !u!212 &428397569
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428397565}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 999
-  m_Sprite: {fileID: 21300000, guid: 256205b9c6ca12c45ab7762da8a65631, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &428397570
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428397565}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.13, y: 0.68, z: 28.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &430880166
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,6 +5713,7 @@ GameObject:
   - component: {fileID: 430880168}
   - component: {fileID: 430880169}
   - component: {fileID: 430880170}
+  - component: {fileID: 430880171}
   m_Layer: 0
   m_Name: FichaCampo (24)
   m_TagString: Fichas
@@ -5649,6 +5815,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &430880171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430880166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 430880167}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &433920631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6724,6 +6908,7 @@ GameObject:
   - component: {fileID: 499445469}
   - component: {fileID: 499445470}
   - component: {fileID: 499445471}
+  - component: {fileID: 499445472}
   m_Layer: 0
   m_Name: FichaCofrePlateado (4)
   m_TagString: FichaCofrePlateado
@@ -6825,6 +7010,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &499445472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499445467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 499445468}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 720484569}
 --- !u!1 &510959024
 GameObject:
   m_ObjectHideFlags: 0
@@ -6950,6 +7152,7 @@ GameObject:
   - component: {fileID: 513213965}
   - component: {fileID: 513213966}
   - component: {fileID: 513213967}
+  - component: {fileID: 513213968}
   m_Layer: 0
   m_Name: FichaCofreEquipo (4)
   m_TagString: FichaCofreEquipo
@@ -7051,6 +7254,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &513213968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513213963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 513213964}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 728636945}
 --- !u!1 &514100791
 GameObject:
   m_ObjectHideFlags: 0
@@ -7063,6 +7283,7 @@ GameObject:
   - component: {fileID: 514100793}
   - component: {fileID: 514100794}
   - component: {fileID: 514100795}
+  - component: {fileID: 514100796}
   m_Layer: 0
   m_Name: FichaCampo (38)
   m_TagString: Fichas
@@ -7164,6 +7385,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &514100796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514100791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 514100792}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &540605390
 GameObject:
   m_ObjectHideFlags: 0
@@ -7176,6 +7415,7 @@ GameObject:
   - component: {fileID: 540605392}
   - component: {fileID: 540605393}
   - component: {fileID: 540605394}
+  - component: {fileID: 540605395}
   m_Layer: 0
   m_Name: FichaCampo (15)
   m_TagString: Fichas
@@ -7277,6 +7517,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &540605395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540605390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 540605391}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &542498425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7718,9 +7976,9 @@ BoxCollider:
   m_GameObject: {fileID: 567093969}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Size: {x: 4, y: 4, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &567093973
 MonoBehaviour:
@@ -7796,143 +8054,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &587577329
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 587577334}
-  - component: {fileID: 587577333}
-  - component: {fileID: 587577332}
-  - component: {fileID: 587577331}
-  - component: {fileID: 587577330}
-  m_Layer: 0
-  m_Name: Emerald Staff
-  m_TagString: Item
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &587577330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587577329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db8189b02deed541852bf696d8e82d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 1
-  type: Weapon
-  descripcion: Es una vara magica [+10Atk]
-  icon: {fileID: 21300000, guid: c66629df5b6254a4e8dc8c1b69369863, type: 3}
-  value: 10
-  Player: {fileID: 0}
-  picketUp: 0
-  equipped: 0
-  weaponManager: {fileID: 0}
-  equipment: {fileID: 0}
-  playersWeapon: 0
---- !u!54 &587577331
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587577329}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &587577332
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587577329}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!212 &587577333
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587577329}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 999
-  m_Sprite: {fileID: 21300000, guid: c66629df5b6254a4e8dc8c1b69369863, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &587577334
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587577329}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.87, y: 0.51, z: 28.86}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622712944
 GameObject:
   m_ObjectHideFlags: 0
@@ -8211,9 +8332,9 @@ BoxCollider:
   m_GameObject: {fileID: 670366310}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Size: {x: 4, y: 4, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &670366314
 MonoBehaviour:
@@ -8300,6 +8421,8 @@ GameObject:
   - component: {fileID: 675849440}
   - component: {fileID: 675849442}
   - component: {fileID: 675849441}
+  - component: {fileID: 675849444}
+  - component: {fileID: 675849443}
   m_Layer: 0
   m_Name: Iron Shield
   m_TagString: Untagged
@@ -8395,6 +8518,35 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!54 &675849443
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675849439}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &675849444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675849439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &680495193
 GameObject:
   m_ObjectHideFlags: 0
@@ -9409,9 +9561,9 @@ BoxCollider:
   m_GameObject: {fileID: 720484569}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Size: {x: 4, y: 4, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &720484573
 MonoBehaviour:
@@ -9659,9 +9811,9 @@ BoxCollider:
   m_GameObject: {fileID: 728636945}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Size: {x: 4, y: 4, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &728636949
 MonoBehaviour:
@@ -9927,6 +10079,7 @@ GameObject:
   - component: {fileID: 735263420}
   - component: {fileID: 735263421}
   - component: {fileID: 735263422}
+  - component: {fileID: 735263423}
   m_Layer: 0
   m_Name: FichaCampo (30)
   m_TagString: Fichas
@@ -10028,6 +10181,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &735263423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735263418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 735263419}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &738172394
 GameObject:
   m_ObjectHideFlags: 0
@@ -10476,6 +10647,7 @@ GameObject:
   - component: {fileID: 837005342}
   - component: {fileID: 837005343}
   - component: {fileID: 837005344}
+  - component: {fileID: 837005345}
   m_Layer: 0
   m_Name: FichaCofreEquipo (2)
   m_TagString: FichaCofreEquipo
@@ -10577,6 +10749,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &837005345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837005340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 837005341}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 728636945}
 --- !u!1 &856998824
 GameObject:
   m_ObjectHideFlags: 0
@@ -10847,6 +11036,7 @@ GameObject:
   - component: {fileID: 894001073}
   - component: {fileID: 894001074}
   - component: {fileID: 894001075}
+  - component: {fileID: 894001076}
   m_Layer: 0
   m_Name: FichaCampo (41)
   m_TagString: Fichas
@@ -10948,6 +11138,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &894001076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894001071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 894001072}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &897798461
 GameObject:
   m_ObjectHideFlags: 0
@@ -11042,6 +11250,7 @@ GameObject:
   - component: {fileID: 908404539}
   - component: {fileID: 908404540}
   - component: {fileID: 908404541}
+  - component: {fileID: 908404542}
   m_Layer: 0
   m_Name: FichaCampo (14)
   m_TagString: Fichas
@@ -11143,6 +11352,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &908404542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908404537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 908404538}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &920498165
 GameObject:
   m_ObjectHideFlags: 0
@@ -11155,6 +11382,7 @@ GameObject:
   - component: {fileID: 920498167}
   - component: {fileID: 920498168}
   - component: {fileID: 920498169}
+  - component: {fileID: 920498170}
   m_Layer: 0
   m_Name: FichaCampo (18)
   m_TagString: Fichas
@@ -11256,6 +11484,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &920498170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920498165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 920498166}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &925168121
 GameObject:
   m_ObjectHideFlags: 0
@@ -12426,7 +12672,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2679165741649929358, guid: 7df99aa35dfb044439c1f970f6d5a1c1, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2679165741649929358, guid: 7df99aa35dfb044439c1f970f6d5a1c1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12754,6 +13000,7 @@ GameObject:
   - component: {fileID: 1199529022}
   - component: {fileID: 1199529023}
   - component: {fileID: 1199529024}
+  - component: {fileID: 1199529025}
   m_Layer: 0
   m_Name: FichaCampo (21)
   m_TagString: Fichas
@@ -12855,6 +13102,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1199529025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199529020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1199529021}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1203568483
 GameObject:
   m_ObjectHideFlags: 0
@@ -12867,6 +13132,7 @@ GameObject:
   - component: {fileID: 1203568485}
   - component: {fileID: 1203568486}
   - component: {fileID: 1203568487}
+  - component: {fileID: 1203568488}
   m_Layer: 0
   m_Name: FichaCampo
   m_TagString: Fichas
@@ -12968,6 +13234,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1203568488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203568483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1203568484}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1236505580
 GameObject:
   m_ObjectHideFlags: 0
@@ -12980,6 +13264,7 @@ GameObject:
   - component: {fileID: 1236505582}
   - component: {fileID: 1236505583}
   - component: {fileID: 1236505584}
+  - component: {fileID: 1236505585}
   m_Layer: 0
   m_Name: FichaCampo (31)
   m_TagString: Fichas
@@ -13081,6 +13366,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1236505585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236505580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1236505581}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1241176144
 GameObject:
   m_ObjectHideFlags: 0
@@ -13093,6 +13396,7 @@ GameObject:
   - component: {fileID: 1241176146}
   - component: {fileID: 1241176147}
   - component: {fileID: 1241176148}
+  - component: {fileID: 1241176149}
   m_Layer: 0
   m_Name: FichaCampo (7)
   m_TagString: Fichas
@@ -13194,6 +13498,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1241176149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241176144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1241176145}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1241197798
 GameObject:
   m_ObjectHideFlags: 0
@@ -13745,6 +14067,7 @@ GameObject:
   - component: {fileID: 1281902415}
   - component: {fileID: 1281902416}
   - component: {fileID: 1281902417}
+  - component: {fileID: 1281902418}
   m_Layer: 0
   m_Name: FichaCampo (13)
   m_TagString: Fichas
@@ -13846,6 +14169,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1281902418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281902413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1281902414}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1287625484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5903521339821394479, guid: 081bdad7a0cafba4db5abfbcd17fe582, type: 3}
@@ -14394,6 +14735,7 @@ GameObject:
   - component: {fileID: 1360111275}
   - component: {fileID: 1360111276}
   - component: {fileID: 1360111277}
+  - component: {fileID: 1360111278}
   m_Layer: 0
   m_Name: FichaCampo (3)
   m_TagString: Fichas
@@ -14495,6 +14837,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1360111278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360111273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1360111274}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1376766368
 GameObject:
   m_ObjectHideFlags: 0
@@ -14507,6 +14867,7 @@ GameObject:
   - component: {fileID: 1376766370}
   - component: {fileID: 1376766371}
   - component: {fileID: 1376766372}
+  - component: {fileID: 1376766373}
   m_Layer: 0
   m_Name: FichaCampo (35)
   m_TagString: Fichas
@@ -14608,6 +14969,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1376766373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376766368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1376766369}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1377696392
 GameObject:
   m_ObjectHideFlags: 0
@@ -15044,6 +15423,7 @@ GameObject:
   - component: {fileID: 1464796899}
   - component: {fileID: 1464796900}
   - component: {fileID: 1464796901}
+  - component: {fileID: 1464796902}
   m_Layer: 0
   m_Name: FichaCampo (20)
   m_TagString: Fichas
@@ -15145,6 +15525,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1464796902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464796897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1464796898}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1473159218
 GameObject:
   m_ObjectHideFlags: 0
@@ -15239,6 +15637,7 @@ GameObject:
   - component: {fileID: 1483524877}
   - component: {fileID: 1483524878}
   - component: {fileID: 1483524879}
+  - component: {fileID: 1483524880}
   m_Layer: 0
   m_Name: FichaCampo (29)
   m_TagString: Fichas
@@ -15340,6 +15739,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1483524880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483524875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1483524876}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1484572608
 GameObject:
   m_ObjectHideFlags: 0
@@ -15352,6 +15769,7 @@ GameObject:
   - component: {fileID: 1484572610}
   - component: {fileID: 1484572611}
   - component: {fileID: 1484572612}
+  - component: {fileID: 1484572613}
   m_Layer: 0
   m_Name: FichaCampo (23)
   m_TagString: Fichas
@@ -15453,6 +15871,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1484572613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484572608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1484572609}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1489191268
 GameObject:
   m_ObjectHideFlags: 0
@@ -15806,6 +16242,7 @@ GameObject:
   - component: {fileID: 1515427468}
   - component: {fileID: 1515427469}
   - component: {fileID: 1515427470}
+  - component: {fileID: 1515427471}
   m_Layer: 0
   m_Name: FichaCampo (4)
   m_TagString: Fichas
@@ -15907,6 +16344,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1515427471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515427466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1515427467}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1522516474
 GameObject:
   m_ObjectHideFlags: 0
@@ -15940,7 +16395,7 @@ Transform:
   - {fileID: 670366311}
   - {fileID: 675849440}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529584345
 GameObject:
@@ -16033,6 +16488,7 @@ GameObject:
   - component: {fileID: 1556842188}
   - component: {fileID: 1556842189}
   - component: {fileID: 1556842190}
+  - component: {fileID: 1556842191}
   m_Layer: 0
   m_Name: FichaCampo (6)
   m_TagString: Fichas
@@ -16134,6 +16590,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1556842191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556842186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1556842187}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1574360825
 GameObject:
   m_ObjectHideFlags: 0
@@ -16146,6 +16620,7 @@ GameObject:
   - component: {fileID: 1574360827}
   - component: {fileID: 1574360828}
   - component: {fileID: 1574360829}
+  - component: {fileID: 1574360830}
   m_Layer: 0
   m_Name: FichaCampo (5)
   m_TagString: Fichas
@@ -16247,6 +16722,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1574360830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574360825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1574360826}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1582419894
 GameObject:
   m_ObjectHideFlags: 0
@@ -16329,143 +16822,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1583912060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1583912065}
-  - component: {fileID: 1583912064}
-  - component: {fileID: 1583912063}
-  - component: {fileID: 1583912062}
-  - component: {fileID: 1583912061}
-  m_Layer: 0
-  m_Name: Emerald Staff (1)
-  m_TagString: Item
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1583912061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583912060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db8189b02deed541852bf696d8e82d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ID: 1
-  type: Weapon
-  descripcion: Es una vara magica [+10Atk]
-  icon: {fileID: 21300000, guid: c66629df5b6254a4e8dc8c1b69369863, type: 3}
-  value: 10
-  Player: {fileID: 0}
-  picketUp: 0
-  equipped: 0
-  weaponManager: {fileID: 0}
-  equipment: {fileID: 0}
-  playersWeapon: 0
---- !u!54 &1583912062
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583912060}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &1583912063
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583912060}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!212 &1583912064
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583912060}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 999
-  m_Sprite: {fileID: 21300000, guid: c66629df5b6254a4e8dc8c1b69369863, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1583912065
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583912060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.71, y: 0.51, z: 28.86}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1586446308
 GameObject:
   m_ObjectHideFlags: 0
@@ -16642,6 +16998,7 @@ GameObject:
   - component: {fileID: 1593227341}
   - component: {fileID: 1593227342}
   - component: {fileID: 1593227343}
+  - component: {fileID: 1593227344}
   m_Layer: 0
   m_Name: FichaCofreEquipo (5)
   m_TagString: FichaCofreEquipo
@@ -16743,6 +17100,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1593227344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593227339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1593227340}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 728636945}
 --- !u!1 &1617170098
 GameObject:
   m_ObjectHideFlags: 0
@@ -16755,6 +17129,7 @@ GameObject:
   - component: {fileID: 1617170100}
   - component: {fileID: 1617170101}
   - component: {fileID: 1617170102}
+  - component: {fileID: 1617170103}
   m_Layer: 0
   m_Name: FichaCampo (26)
   m_TagString: Fichas
@@ -16856,6 +17231,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1617170103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617170098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1617170099}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1629699875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3888203798238474279, guid: 585eab96b8da3d44fb6e864fdb59b224, type: 3}
@@ -17110,9 +17503,10 @@ GameObject:
   - component: {fileID: 1646991200}
   - component: {fileID: 1646991202}
   - component: {fileID: 1646991203}
+  - component: {fileID: 1646991204}
   m_Layer: 0
   m_Name: FichaAlas
-  m_TagString: FichaAlas
+  m_TagString: FichaCofrePlateado
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17211,6 +17605,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1646991204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646991199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1646991201}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 675849439}
+  - {fileID: 567093969}
+  - {fileID: 728636945}
+  - {fileID: 670366310}
 --- !u!1 &1648363971
 GameObject:
   m_ObjectHideFlags: 0
@@ -18135,7 +18548,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1760817478
 GameObject:
@@ -18421,6 +18834,7 @@ GameObject:
   - component: {fileID: 1813757615}
   - component: {fileID: 1813757616}
   - component: {fileID: 1813757617}
+  - component: {fileID: 1813757618}
   m_Layer: 0
   m_Name: FichaCampo (34)
   m_TagString: Fichas
@@ -18522,6 +18936,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1813757618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813757613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1813757614}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1815782497
 GameObject:
   m_ObjectHideFlags: 0
@@ -18786,6 +19218,7 @@ GameObject:
   - component: {fileID: 1860961801}
   - component: {fileID: 1860961802}
   - component: {fileID: 1860961803}
+  - component: {fileID: 1860961804}
   m_Layer: 0
   m_Name: FichaCampo (28)
   m_TagString: Fichas
@@ -18887,6 +19320,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1860961804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860961799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1860961800}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1886655193
 GameObject:
   m_ObjectHideFlags: 0
@@ -19012,6 +19463,7 @@ GameObject:
   - component: {fileID: 1903575683}
   - component: {fileID: 1903575684}
   - component: {fileID: 1903575685}
+  - component: {fileID: 1903575686}
   m_Layer: 0
   m_Name: FichaCofrePlateado (2)
   m_TagString: FichaCofrePlateado
@@ -19113,6 +19565,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1903575686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903575681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1903575682}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 720484569}
 --- !u!1 &1913034974
 GameObject:
   m_ObjectHideFlags: 0
@@ -19125,6 +19594,7 @@ GameObject:
   - component: {fileID: 1913034976}
   - component: {fileID: 1913034977}
   - component: {fileID: 1913034978}
+  - component: {fileID: 1913034979}
   m_Layer: 0
   m_Name: FichaCampo (33)
   m_TagString: Fichas
@@ -19226,6 +19696,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1913034979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913034974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1913034975}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1927966662
 GameObject:
   m_ObjectHideFlags: 0
@@ -19993,6 +20481,7 @@ GameObject:
   - component: {fileID: 1979426993}
   - component: {fileID: 1979426994}
   - component: {fileID: 1979426995}
+  - component: {fileID: 1979426996}
   m_Layer: 0
   m_Name: FichaCampo (27)
   m_TagString: Fichas
@@ -20094,6 +20583,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1979426996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979426991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1979426992}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &1980663068
 GameObject:
   m_ObjectHideFlags: 0
@@ -20188,6 +20695,7 @@ GameObject:
   - component: {fileID: 1997810447}
   - component: {fileID: 1997810448}
   - component: {fileID: 1997810449}
+  - component: {fileID: 1997810450}
   m_Layer: 0
   m_Name: FichaCofrePlateado (3)
   m_TagString: FichaCofrePlateado
@@ -20289,6 +20797,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1997810450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997810445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 1997810446}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 720484569}
 --- !u!1 &2015047700
 GameObject:
   m_ObjectHideFlags: 0
@@ -20493,13 +21018,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2022320699}
-  m_LocalRotation: {x: -0.40821788, y: 0.23456968, z: -0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -130.40382, y: 35.835026, z: 72.62546}
+  m_LocalRotation: {x: -0.4770414, y: 0.21463919, z: -0.22936358, w: 0.82082516}
+  m_LocalPosition: {x: -74.95, y: 34.44, z: 69.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2060834321}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -43.21, y: 51.6, z: -52.9}
 --- !u!65 &2022320701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20524,7 +21049,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -20591,7 +21116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 999
   m_Sprite: {fileID: 21300000, guid: 256205b9c6ca12c45ab7762da8a65631, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20615,6 +21140,7 @@ GameObject:
   - component: {fileID: 2033300757}
   - component: {fileID: 2033300758}
   - component: {fileID: 2033300759}
+  - component: {fileID: 2033300760}
   m_Layer: 0
   m_Name: FichaCampo (39)
   m_TagString: Fichas
@@ -20716,6 +21242,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2033300760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033300755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 2033300756}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &2060834320
 GameObject:
   m_ObjectHideFlags: 0
@@ -21022,6 +21566,7 @@ GameObject:
   - component: {fileID: 2103499256}
   - component: {fileID: 2103499257}
   - component: {fileID: 2103499258}
+  - component: {fileID: 2103499259}
   m_Layer: 0
   m_Name: FichaCampo (40)
   m_TagString: Fichas
@@ -21123,6 +21668,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2103499259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103499254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 2103499255}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &2105287823
 GameObject:
   m_ObjectHideFlags: 0
@@ -21394,6 +21957,7 @@ GameObject:
   - component: {fileID: 2117086750}
   - component: {fileID: 2117086751}
   - component: {fileID: 2117086752}
+  - component: {fileID: 2117086753}
   m_Layer: 0
   m_Name: FichaCampo (37)
   m_TagString: Fichas
@@ -21495,6 +22059,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2117086753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117086748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 2117086749}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &2120210142
 GameObject:
   m_ObjectHideFlags: 0
@@ -21602,6 +22184,7 @@ GameObject:
   - component: {fileID: 2124641539}
   - component: {fileID: 2124641540}
   - component: {fileID: 2124641541}
+  - component: {fileID: 2124641542}
   m_Layer: 0
   m_Name: FichaCampo (10)
   m_TagString: Fichas
@@ -21703,6 +22286,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2124641542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124641537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 2124641538}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &2125669044
 GameObject:
   m_ObjectHideFlags: 0
@@ -21715,6 +22316,7 @@ GameObject:
   - component: {fileID: 2125669046}
   - component: {fileID: 2125669047}
   - component: {fileID: 2125669048}
+  - component: {fileID: 2125669049}
   m_Layer: 0
   m_Name: FichaCampo (11)
   m_TagString: Fichas
@@ -21816,6 +22418,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2125669049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125669044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 2125669045}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 675849439}
 --- !u!1 &2125915451
 GameObject:
   m_ObjectHideFlags: 0
@@ -21910,6 +22530,7 @@ GameObject:
   - component: {fileID: 2126585906}
   - component: {fileID: 2126585907}
   - component: {fileID: 2126585908}
+  - component: {fileID: 2126585909}
   m_Layer: 0
   m_Name: FichaCofrePlateado (1)
   m_TagString: FichaCofrePlateado
@@ -22011,6 +22632,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2126585909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126585904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fab9cdc503a8c41b7a663a1cb4d281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos_instancia: {fileID: 2126585905}
+  items:
+  - {fileID: 567093969}
+  - {fileID: 567093969}
+  - {fileID: 720484569}
 --- !u!1 &2136575177
 GameObject:
   m_ObjectHideFlags: 0

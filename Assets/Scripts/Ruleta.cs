@@ -8,7 +8,7 @@ public class Ruleta :MonoBehaviour
 {
 
     public GameObject textBox;
-    public int number;
+    public static int number;
     
 
     public void Start()

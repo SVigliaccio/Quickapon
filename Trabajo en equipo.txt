@@ -1,0 +1,18 @@
+Profe le dejamos el bloc con la division de trabajo:
+
+-ADRI:
+	-Modificó con photoshop texturas del terreno.
+	-Creacion de Logo e Icono.
+	-Panel de opciones para los turnos.
+	-Escena BattleScene + Sistema de batalla.
+	-Sonido/Musica.
+	-Sistema de Don't Destroy On Load.
+-SOFI:
+	-Generó el terreno en unity (scene level 2).
+	-Generacion de menu.
+	-Movimiento del personaje + AI->Navigation.
+	-Conexion de escenas menu->level->battle
+	-Particle System (Luciernagas)
+	-Sistema de inventario
+
+Saludos;

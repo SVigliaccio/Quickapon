@@ -26,6 +26,8 @@ public class BattleSystem : MonoBehaviour
 
 	public BattleState state;
 
+	public static bool ganado = false;
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -81,7 +83,9 @@ public class BattleSystem : MonoBehaviour
 		if(isDead)
 		{
 			state = BattleState.WON;
+			ganado = true;
 			StartCoroutine(EndBattle());
+			
 			if (SceneManager.GetActiveScene().name == "FinalBattle")
 			{
 				Final.SetActive(true);
@@ -109,8 +113,9 @@ public class BattleSystem : MonoBehaviour
 		if(isDead)
 		{
 			state = BattleState.LOST;
+			ganado = false;
 			EndBattle();
-
+			
 			
 		} else
 		{
