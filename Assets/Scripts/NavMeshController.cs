@@ -63,36 +63,40 @@ public class NavMeshController : MonoBehaviour
         if (other.tag == "Fichas"  || other.tag == "FichaCiudad"
             || other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo")
         {
-            Transform item = other.gameObject.transform.GetChild(0);
-            if (Ruleta.number > 0 && caminar) //si los movimientos restantes son mayores a 0, entonces que le reste 1.
+            if(other.tag != "FichaCiudad")
             {
-                Ruleta.number -= 1; 
-            }
+                Transform item = other.gameObject.transform.GetChild(0);
+            
+                if (Ruleta.number > 0 && caminar) //si los movimientos restantes son mayores a 0, entonces que le reste 1.
+                {
+                    Ruleta.number -= 1; 
+                }
 
-            if(Ruleta.number == 0 && other.tag == "Fichas")
-            {
-                Ruleta.number = 2;
-                escena.ChangeScene("BattleScene");
+                if(Ruleta.number == 0 && other.tag == "Fichas")
+                {
+                    Ruleta.number = 2;
+                    escena.ChangeScene("BattleScene");
                 
+                }
+                if (Ruleta.number == 0 && (other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo"))
+                {
+                    Panel.SetActive(true);
+                    Ruleta.number = 2;
+                    boton.interactable = true;
+                
+                    item.gameObject.GetComponent<BoxCollider>().enabled = true;
+                    //LLamar metodo random
+                }
+                if (BattleSystem.ganado == true)
+                {
+                    item.gameObject.GetComponent<BoxCollider>().enabled = true;
+                }
             }
             if (Ruleta.number == 0 && other.tag == "FichaCiudad")
             {
                 Ruleta.number = 2;
                 escena.ChangeScene("FinalBattle");
 
-            }
-            if (Ruleta.number == 0 && (other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo"))
-            {
-                Panel.SetActive(true);
-                Ruleta.number = 2;
-                boton.interactable = true;
-                
-                item.gameObject.GetComponent<BoxCollider>().enabled = true;
-                //LLamar metodo random
-            }
-            if (BattleSystem.ganado == true)
-            {
-                item.gameObject.GetComponent<BoxCollider>().enabled = true;
             }
         }
         print("Mov al caminar: " + Ruleta.number);

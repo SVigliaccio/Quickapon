@@ -8,6 +8,7 @@ public class Unit : MonoBehaviour
 	public string unitName;
 	public int unitLevel;
 
+	public static int dañoBase = 15;
 	public static int damage = 15;
 	public static int defence = 0;
 	public int enemyDamage;

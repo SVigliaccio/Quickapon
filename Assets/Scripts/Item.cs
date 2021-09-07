@@ -53,8 +53,9 @@ public class Item : MonoBehaviour
             if (equipped == false)
             {
                 gameObject.SetActive(false);
+               
+                if (type == "Weapon")Unit.damage -= value;
                 
-                if(type == "Weapon")Unit.damage -= value;
                 if (type == "Shield") Unit.defence -= value;
             }
         }
@@ -63,16 +64,18 @@ public class Item : MonoBehaviour
     {
         if (type == "Weapon")
         {
+            
             equipment.SetActive(true);
-
+            if (Unit.damage != Unit.dañoBase) { Unit.damage = Unit.dañoBase; }
             equipment.GetComponent<Item>().equipped = true;
             if (type == "Weapon") Unit.damage += value;
             if (type == "Shield") Unit.defence += value;
         }
         if (type == "Shield")
         {
+            
             equipment.SetActive(true);
-
+            if (Unit.defence != 0) { Unit.defence = 0; }
             equipment.GetComponent<Item>().equipped = true;
             Unit.defence += value;
         }
