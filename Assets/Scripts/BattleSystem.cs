@@ -114,6 +114,8 @@ public class BattleSystem : MonoBehaviour
 		{
 			state = BattleState.LOST;
 			ganado = false;
+			Final.transform.GetChild(0).gameObject.GetComponent<Text>().text = "Ban´aan te ha derrotado!. El destino de Quickapon esta en problemas, mejor suerte en tu proxima vida!";
+			Final.SetActive(true);
 			EndBattle();
 			
 			

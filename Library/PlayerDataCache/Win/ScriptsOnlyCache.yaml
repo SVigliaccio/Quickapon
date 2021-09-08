@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - BattleHUD
     - BattleSystem
     - DontDestroyOnLoad
+    - EnabledObject
     - FINAL
     - HideUIonBattle
     - InstanciaItemRandom
@@ -291,6 +292,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4268}
     - Class: 114
       Script: {instanceID: 4358}
+    - Class: 114
+      Script: {instanceID: 82774}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -367,8 +370,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -477,7 +478,7 @@ ScriptsOnlyBuild:
     className: HideUIonBattle
   - hash:
       serializedVersion: 2
-      Hash: a1eaa642efde1e70c35e02229babfdb5
+      Hash: 8fa8182627793288bc497ef026b8a4af
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Inventory
@@ -687,12 +688,6 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Move
-  - hash:
-      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -897,20 +892,20 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 729dd460974c0beb1e67dbf3aa655aee
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Inventario
-  - hash:
-      serializedVersion: 2
       Hash: b4cf49c71d8996eb0d0d13e7c58b8a15
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NavMeshController
+  - hash:
+      serializedVersion: 2
+      Hash: d1d822d1291e2758b2af34ef931d0fc8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnabledObject
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level2.unity
   - Assets/Scenes/BattleScene.unity
   - Assets/Scenes/FinalBattle.unity
-  playerPath: C:/Users/adrip/Desktop/Adriano Pistoia y Sofia Vigliaccio -Quickapon!/Quickapon.exe
+  playerPath: C:/Users/sofia/OneDrive/Desktop/SofiaVigliaccio_AdrianoPistoia_Quickapon/Quickapon.exe

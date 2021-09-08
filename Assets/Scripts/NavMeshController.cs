@@ -63,14 +63,13 @@ public class NavMeshController : MonoBehaviour
         if (other.tag == "Fichas"  || other.tag == "FichaCiudad"
             || other.tag == "FichaCofrePlateado" || other.tag == "FichaCofreEquipo")
         {
-            if(other.tag != "FichaCiudad")
+            if (Ruleta.number > 0 && caminar) //si los movimientos restantes son mayores a 0, entonces que le reste 1.
+            {
+                Ruleta.number -= 1;
+            }
+            if (other.tag != "FichaCiudad")
             {
                 Transform item = other.gameObject.transform.GetChild(0);
-            
-                if (Ruleta.number > 0 && caminar) //si los movimientos restantes son mayores a 0, entonces que le reste 1.
-                {
-                    Ruleta.number -= 1; 
-                }
 
                 if(Ruleta.number == 0 && other.tag == "Fichas")
                 {
@@ -90,6 +89,8 @@ public class NavMeshController : MonoBehaviour
                 if (BattleSystem.ganado == true)
                 {
                     item.gameObject.GetComponent<BoxCollider>().enabled = true;
+                    BattleSystem.ganado = false;
+                    Panel.SetActive(true);
                 }
             }
             if (Ruleta.number == 0 && other.tag == "FichaCiudad")

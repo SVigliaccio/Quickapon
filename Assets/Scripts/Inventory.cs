@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Inventory : MonoBehaviour
     private int enabledSlots;
     private GameObject[] slot;
     public GameObject slotHolder;
+    public Button btnInventario;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +28,13 @@ public class Inventory : MonoBehaviour
                 slot[i].GetComponent<Slot>().empty = true;
             }
         }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+      
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
@@ -43,6 +47,7 @@ public class Inventory : MonoBehaviour
         {
             inventory.SetActive(false);
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
