@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3888203798238474280}
   - component: {fileID: 3888203798238474281}
   - component: {fileID: 3888203798238474278}
-  - component: {fileID: 1141192588484113994}
   m_Layer: 5
   m_Name: UI_2 1
   m_TagString: Untagged
@@ -102,18 +101,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1141192588484113994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3888203798238474279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a722449414437194d9207121b416e655, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3888203798429376188
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +458,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1141192588484113994}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Salir, Assembly-CSharp
         m_MethodName: salir
         m_Mode: 1

@@ -1299,8 +1299,8 @@ MonoBehaviour:
   unitName: "Ban\xB4aan"
   unitLevel: 8
   enemyDamage: 20
-  maxHP: 120
-  currentHP: 120
+  maxHP: 200
+  currentHP: 200
 --- !u!1 &4782237166509454558
 GameObject:
   m_ObjectHideFlags: 0
